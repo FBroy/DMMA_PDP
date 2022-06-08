@@ -1,0 +1,7 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/p4/network_dos/basic'
+mkdir -p build pcaps logs
+p4c-bm2-ss --p4v 16 --p4runtime-files build/basic.p4.p4info.txt -o build/basic.json basic.p4
+sudo python3 ../utils/run_exercise.py -t pod-topo/topology.json -j build/basic.json -b simple_switch_grpc
+make: Leaving directory '/home/p4/network_dos/basic'
+ 

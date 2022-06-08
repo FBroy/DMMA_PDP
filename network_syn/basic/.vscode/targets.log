@@ -1,0 +1,436 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 4.2.1
+# Built for x86_64-pc-linux-gnu
+# Copyright (C) 1988-2016 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Wed May 25 11:05:31 2022
+
+# Variables
+
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+?F = $(notdir $?)
+# makefile (from '../utils/Makefile', line 14)
+source = $(wildcard *.p4)
+# environment
+DESKTOP_SESSION = Lubuntu
+# default
+.SHELLFLAGS := -c
+# environment
+XDG_SESSION_CLASS = user
+# environment
+SNAP_COMMON = /var/snap/code/common
+# environment
+XDG_SESSION_TYPE = x11
+# environment
+VSCODE_LOG_NATIVE = false
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# environment
+XAUTHORITY = /home/p4/.Xauthority
+# automatic
+@F = $(notdir $@)
+# default
+MAKE_VERSION := 4.2.1
+# makefile
+CURDIR := /home/p4/network/basic
+# makefile
+SHELL = /bin/sh
+# environment
+SNAP_DATA = /var/snap/code/97
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+# environment
+XDG_CONFIG_DIRS = /etc/xdg/xdg-Lubuntu:/etc/xdg:/etc:/usr/share
+# environment
+SNAP_INSTANCE_NAME = code
+# environment
+SNAP_ARCH = amd64
+# environment
+GTK_OVERLAY_SCROLLING = 0
+# makefile (from '../utils/Makefile', line 1)
+MAKEFILE_LIST :=  Makefile ../utils/Makefile
+# makefile (from '../utils/Makefile', line 18)
+DEFAULT_PROG = $(wildcard *.p4)
+# environment
+GIO_LAUNCHED_DESKTOP_FILE = /var/lib/snapd/desktop/applications/code_code.desktop
+# 'override' directive
+GNUMAKEFLAGS := 
+# makefile (from 'Makefile', line 2)
+TOPO = pod-topo/topology.json
+# environment
+LXQT_DEFAULT_OPENBOX_CONFIG = /etc/xdg/xdg-Lubuntu/openbox/lxqt-rc.xml
+# environment
+XDG_DATA_DIRS = /usr/share/Lubuntu:/usr/local/share:/usr/share:/var/lib/snapd/desktop
+# makefile (from '../utils/Makefile', line 5)
+P4C = p4c-bm2-ss
+# environment
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1001/bus
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# environment
+LESSOPEN = | /usr/bin/lesspipe %s
+# environment
+VSCODE_CWD = /home/p4/network/basic
+# environment
+XDG_SESSION_PATH = /org/freedesktop/DisplayManager/Session1
+# environment
+GSETTINGS_SCHEMA_DIR = /snap/code/97/usr/share/glib-2.0/schemas
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
+# environment
+PATH = /home/p4/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+# environment
+GPG_AGENT_INFO = /run/user/1001/gnupg/S.gpg-agent:0:1
+# environment
+LXQT_SESSION_CONFIG = session
+# environment
+XDG_RUNTIME_DIR = /run/user/1001
+# environment
+GDK_PIXBUF_MODULE_FILE = /home/p4/snap/code/common/.cache/gdk-pixbuf-loaders.cache
+# environment
+SNAP = /snap/code/97
+# environment
+WINDOWID = 0
+# environment
+SNAP_VERSION = c3511e6c
+# environment
+XDG_MENU_PREFIX = lxqt-
+# environment
+VSCODE_LOG_STACK = false
+# environment
+DISABLE_WAYLAND = 1
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+GDK_PIXBUF_MODULEDIR = /snap/code/97/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
+# environment
+LS_COLORS = rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
+# environment
+XDG_SESSION_DESKTOP = 
+# environment
+SSH_AUTH_SOCK = /tmp/ssh-L3zNK1es6uPp/agent.1397
+# environment
+GIO_LAUNCHED_DESKTOP_FILE_PID = 17600
+# automatic
+%F = $(notdir $%)
+# environment
+DISPLAY = :0
+# environment
+VSCODE_PIPE_LOGGING = true
+# environment
+SNAP_INSTANCE_KEY = 
+# environment
+PWD = /home/p4/network/basic
+# environment
+QT_QPA_PLATFORMTHEME = lxqt
+# default
+.LOADED := 
+# environment
+XDG_SEAT = seat0
+# environment
+SSH_AGENT_PID = 1470
+# makefile (from '../utils/Makefile', line 20)
+DEFAULT_JSON = $(BUILD_DIR)/$(DEFAULT_PROG:.p4=.json)
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = LXQt
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /home/p4
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# environment
+XDG_CACHE_HOME = /home/p4/.cache
+# environment
+LESSCLOSE = /usr/bin/lesspipe %s %s
+# environment
+VSCODE_CLI = 1
+# environment
+VSCODE_CODE_CACHE_PATH = /home/p4/.config/Code/CachedData/c3511e6c69bb39013c4a4b7b9566ec1ca73fc4d5
+# environment
+LOGNAME = p4
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# environment
+SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void
+# environment
+SNAP_CONTEXT = -cBJ57YXt5pGr4IpEl_xcjlmmLDYJq--WfSh_1kE1dCEqTucWNFL
+# automatic
++F = $(notdir $+)
+# environment
+ELECTRON_NO_ATTACH_CONSOLE = 1
+# environment
+SNAP_USER_COMMON = /home/p4/snap/code/common
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+XDG_VTNR = 1
+# environment
+MAKELEVEL := 0
+# environment
+SNAP_REAL_HOME = /home/p4
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# environment
+SNAP_USER_DATA = /home/p4/snap/code/97
+# environment
+SHLVL = 1
+# makefile (from '../utils/Makefile', line 1)
+BUILD_DIR = build
+# environment
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1001/vscode-ipc-a2182fee-a673-4f74-a8a9-1bd46528c20f.sock
+# environment
+XDG_SESSION_ID = 3
+# environment
+USER = p4
+# environment
+SNAP_REVISION = 97
+# makefile
+.DEFAULT_GOAL := all
+# makefile (from '../utils/Makefile', line 8)
+RUN_SCRIPT = ../utils/run_exercise.py
+# environment
+XDG_CURRENT_DESKTOP = LXQt
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# environment
+SAL_USE_VCLPLUGIN = qt5
+# makefile (from '../utils/Makefile', line 29)
+run_args = -j $(DEFAULT_JSON) -b $(BMV2_SWITCH_EXE)
+# makefile (from '../utils/Makefile', line 2)
+PCAP_DIR = pcaps
+# default
+MAKE_COMMAND := make
+# environment
+OLDPWD = /home/p4/network
+# default
+.VARIABLES := 
+# automatic
+*F = $(notdir $*)
+# environment
+LANGUAGE = 
+# environment
+XDG_SEAT_PATH = /org/freedesktop/DisplayManager/Seat0
+# environment
+VSCODE_IPC_HOOK = /run/user/1001/vscode-00d521f0-1.67.2-main.sock
+# environment
+BAMF_DESKTOP_FILE_HINT = /var/lib/snapd/desktop/applications/code_code.desktop
+# makefile
+MAKEFLAGS = pqrR
+# environment
+MFLAGS = -pqrR
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# makefile (from '../utils/Makefile', line 3)
+LOG_DIR = logs
+# environment
+GTK_CSD = 0
+# environment
+GDK_BACKEND = x11
+# environment
+QT_PLATFORM_PLUGIN = lxqt
+# environment
+BROWSER = firefox
+# environment
+NO_AT_BRIDGE = 1
+# environment
+COLORFGBG = 15;0
+# default
+MAKEFILES := 
+# environment
+SNAP_COOKIE = -cBJ57YXt5pGr4IpEl_xcjlmmLDYJq--WfSh_1kE1dCEqTucWNFL
+# makefile (from 'Makefile', line 1)
+BMV2_SWITCH_EXE = simple_switch_grpc
+# automatic
+<F = $(notdir $<)
+# environment
+XDG_CONFIG_HOME = /home/p4/.config
+# environment
+SNAP_NAME = code
+# environment
+LC_ALL = C
+# automatic
+^F = $(notdir $^)
+# environment
+XDG_DATA_HOME = /home/p4/.local/share
+# default
+SUFFIXES := 
+# environment
+SNAP_REEXEC = 
+# environment
+CHROME_DESKTOP = code-url-handler.desktop
+# default
+.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
+# default
+.RECIPEPREFIX := 
+ 
+# environment
+LANG = C
+# environment
+TERM = xterm-256color
+# environment
+VSCODE_PID = 17646
+# makefile (from '../utils/Makefile', line 6)
+P4C_ARGS = --p4runtime-files $(BUILD_DIR)/$(basename $@).p4.p4info.txt
+# makefile (from '../utils/Makefile', line 15)
+compiled_json := basic.json basic_syn.json
+# variable set hash-table stats:
+# Load=138/1024=13%, Rehash=0, Collisions=21/181=12%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 64768, inode 925339): 10 files, no impossibilities.
+
+# 10 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+%.json: %.p4
+#  recipe to execute (from '../utils/Makefile', line 43):
+	$(P4C) --p4v 16 $(P4C_ARGS) -o $(BUILD_DIR)/$@ $<
+
+# 1 implicit rules, 0 (0.0%) terminal.
+
+# Files
+
+stop:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '../utils/Makefile', line 38):
+	sudo mn -c
+
+all: run
+#  Command line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/6=0%
+
+# Not a target:
+basic.json:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-04 10:18:14.289746
+#  File has been updated.
+#  Successfully updated.
+
+build: dirs basic.json basic_syn.json
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/6=0%
+
+dirs:
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: ''
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := dirs
+# automatic
+# % := 
+# automatic
+# * := 
+# automatic
+# + := 
+# automatic
+# | := 
+# automatic
+# < := 
+# automatic
+# ^ := 
+# automatic
+# ? := 
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=1/14=7%
+#  recipe to execute (from '../utils/Makefile', line 46):
+	mkdir -p $(BUILD_DIR) $(PCAP_DIR) $(LOG_DIR)
+
+# Not a target:
+../utils/Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-04 10:18:56.461749
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+basic_syn.json:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+run: build
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/6=0%
+#  recipe to execute (from '../utils/Makefile', line 35):
+	sudo python3 $(RUN_SCRIPT) -t $(TOPO) $(run_args)
+
+clean: stop
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '../utils/Makefile', line 49):
+	rm -f *.pcap
+	rm -rf $(BUILD_DIR) $(PCAP_DIR) $(LOG_DIR)
+
+# files hash-table stats:
+# Load=12/1024=1%, Rehash=0, Collisions=0/34=0%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 25 / storage = 221 B / avg = 8 B
+# current buf: size = 8162 B / used = 221 B / count = 25 / avg = 8 B
+
+# strcache performance: lookups = 42 / hit rate = 40%
+# hash-table stats:
+# Load=25/8192=0%, Rehash=0, Collisions=1/42=2%
+# Finished Make data base on Wed May 25 11:05:31 2022
+
+ 
